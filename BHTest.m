@@ -1,5 +1,7 @@
 function [leak_prob, leak_magnitude, P_z_Z_H] = BHTest(leak_prob_prev, var_msmt, z, x_est, m_leak_dot_vec, N, P_w_unn)
 
+% This script is not used in the SAMPF, only for MMPF and IMMPF
+
 M = length(m_leak_dot_vec);
 sigma_measurement = sqrt(var_msmt);
 leak_prob = zeros(M,1);
